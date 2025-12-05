@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Reading Summarizer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-start p-6 font-sans">
+
+  <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">AI Reading Summarizer</h1>
+
+  <div class="w-full max-w-2xl bg-white rounded shadow p-6">
+    <label class="block mb-2 font-semibold text-gray-700" for="urlInput">Enter Article URL:</label>
+    <input type="text" id="urlInput" placeholder="https://example.com/article" 
+           class="w-full p-2 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+
+    <button id="summarizeBtn" 
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md font-semibold transition">
+      Generate Summary
+    </button>
+
+    <div id="summary" class="mt-4 bg-gray-50 p-4 rounded shadow text-gray-700 max-h-96 overflow-y-auto">
+      Your summary will appear here...
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
